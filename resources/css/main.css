@@ -1,0 +1,61 @@
+#page-container {
+    margin-top: 2em;
+}
+
+#input-form {
+    border: 1px solid #555;
+    border-radius: 0.2em;
+    margin-bottom: 2em;
+}
+
+.form-group {
+    width: 90%;
+    margin: auto;
+}
+
+#city-field {
+    width: 50%;
+}
+
+#dropdowns {
+    display: flex;
+    padding: 0.5em;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#submit-btn {
+    padding: 0em 0.5em;
+}
+
+#state-section, #country-section {
+    max-width: 60%;
+    padding: 0em;
+}
+
+.drop-btn {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#state-dropdown, #submit-btn {
+    display: block;
+}
+
+#current-cond {
+    border: 1px solid #555;
+    border-radius: 0.2em;
+}
+
+#conditions-container {
+    width: 90%;
+    margin: auto;
+}
+
+#current-conditions {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25em;
+}

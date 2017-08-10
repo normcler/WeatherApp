@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+Purpose:
+
+Designer: N. S. Clerman,
+-->
+<html lang="en">
+  <head>
+    <title>Weather Forecast</title>
+    <meta charset="utf-8"/>
+    <!-- Bootstrap links-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+    <link href="./resources/css/main.css" type="text/css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div class="container" id="page-container">
+      <div class="row">
+
+        <div class="col-md-offset-1 col-md-8">
+          <form onsubmit="return assembleURL()" id="input-form">
+            <div class="form-group">
+              <label>Enter City Name</label>
+              <input type="text" class="form-control" id="city-field" placeholder="Chicago" required>
+            </div>
+
+            <div id="dropdowns">
+              <div id="state-section">
+                <select required class="drop-btn" id="select-state" name="state-selector">
+                  <option value="">Select a State</option>
+                </select>
+              </div>
+
+              <div id="country-section">
+                <select required  class="drop-btn" id="select-country" name="country-selector">
+                  <option value="">Select a Country</option>
+                </select>              
+              </div>
+
+              <button type="submit" class="btn btn-default" id="submit-btn">Submit</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-1 col-md-5">
+          <div id="current-cond">
+            <div id="conditions-container">
+              <span id="current-conditions">Current Conditions</span>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td><strong>       Date:</strong></td>
+                    <td id="date"></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Temperature:</strong></td>
+                    <td id="temp"></td>
+                  </tr>
+                  <tr>
+                    <td><strong> Conditions:</strong></td>
+                    <td id="conditions"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- JQuery script-->    
+    <script
+       src="https://code.jquery.com/jquery-3.2.1.min.js"
+       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+       crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./resources/scripts/weather.js"></script>
+
+  </body>
+</html>
