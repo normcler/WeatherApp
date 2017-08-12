@@ -21,23 +21,24 @@ Designer: N. S. Clerman,
     <div class="container" id="page-container">
       <div class="row">
 
-        <div class="col-md-offset-1 col-md-8">
+        <div class="col-md-offset-1 col-md-9">
           <form onsubmit="return assembleURL()" id="input-form">
             <div class="form-group">
               <label>Enter City Name</label>
-              <input type="text" class="form-control" id="city-field" placeholder="Chicago" required>
+              <input type="text" class="form-control" id="city-field"
+                     placeholder="Chicago" required>
             </div>
 
             <div id="dropdowns">
               <div id="state-section">
-                <select required class="drop-btn" id="select-state" name="state-selector">
-                  <option value="">Select a State</option>
+                <select class="drop-btn" id="select-state" name="state-selector">
+                  <option value="IL">Select a State (U.S.A) or Province (Canada)</option>
                 </select>
               </div>
 
               <div id="country-section">
                 <select required  class="drop-btn" id="select-country" name="country-selector">
-                  <option value="">Select a Country</option>
+                  <option value="US">Select a Country</option>
                 </select>              
               </div>
 
@@ -52,7 +53,10 @@ Designer: N. S. Clerman,
         <div class="col-md-offset-1 col-md-5">
           <div id="current-cond">
             <div id="conditions-container">
-              <span id="current-conditions">Current Conditions</span>
+              <!-- <label id="location" class="panel-label">Baltimore, Maryland</label>
+              <label id="current-conditions" class="panel-label">Current Conditions</label>-->
+              <label class="panel-label" id="location">Baltimore, Maryland</label>
+              <label class="panel-label">Current Conditions</label>
               <table class="table">
                 <tbody>
                   <tr>

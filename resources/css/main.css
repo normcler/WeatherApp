@@ -1,3 +1,9 @@
+body {
+    //background-image: url("/home/norm/Dropbox/manitowoc/coding-temple/jquery/WeatherApp/resources/images/chi1.jpg");
+    background-image: url("../../resources/images/chi1.jpg");
+
+}
+
 #page-container {
     margin-top: 2em;
 }
@@ -5,11 +11,12 @@
 #input-form {
     border: 1px solid #555;
     border-radius: 0.2em;
-    margin-bottom: 2em;
+    margin: 2em 0em;
+    background-color: BurlyWood;
 }
 
 .form-group {
-    width: 90%;
+    width: 88%;
     margin: auto;
 }
 
@@ -22,7 +29,7 @@
     padding: 0.5em;
     flex-wrap: wrap;
     width: 90%;
-    margin: auto;
+    margin: 2em auto;
     justify-content: space-between;
 }
 
@@ -45,6 +52,7 @@
 }
 
 #current-cond {
+    background-color: BurlyWood;
     border: 1px solid #555;
     border-radius: 0.2em;
 }
@@ -54,8 +62,16 @@
     margin: auto;
 }
 
-#current-conditions {
+.panel-label {
     display: block;
-    font-weight: 700;
+}
+
+#location {
+    border-bottom: 2px solid #777;
+    padding: 0.5em 0em;
+}
+
+#current-conditions {
     margin-bottom: 0.25em;
+    padding: 0.25em;
 }
