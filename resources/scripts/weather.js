@@ -28,7 +28,7 @@ var getForecast = function (buildURL) {
 //};
 
 var postConditions = function(jd) {
-    console.log(jd.query.results.channel.item.condition);
+    console.log(jd.query.results.channel.item);
 
     // first post the location
     var city = jd.query.results.channel.location.city;
@@ -38,6 +38,17 @@ var postConditions = function(jd) {
     $("#date").text(jd.query.results.channel.item.condition.date);
     $("#temp").text(jd.query.results.channel.item.condition.temp);
     $("#conditions").text(jd.query.results.channel.item.condition.text);
+    postDayForecast(jd, 0);
+}
+
+var postDayForecast = function(jd, dayNum) {
+    var forecastObj = jd.query.results.channel.item.forecast[dayNum];
+    console.log(forecastObj);
+    $("#forecast-0 .forecast-day").text("Today");
+    $("#forecast-0 img").attr('src', "/home/norm/Dropbox/manitowoc/coding-temple/jquery/WeatherApp/resources/images/bkn.png");
+    $("#forecast-0 .day-conditions").text(forecastObj.text);
+    $("#forecast-0 .day-high").text(forecastObj.high);
+    $("#forecast-0 .day-low").text(forecastObj.low);
 }
 
 var assembleURL = function() {

@@ -1,0 +1,104 @@
+@box-background: BurlyWood;
+
+.stand-box {
+    border: 1px solid #555;
+    border-radius: 0.2em;
+}
+
+body {
+    //background-image: url("/home/norm/Dropbox/manitowoc/coding-temple/jquery/WeatherApp/resources/images/chi1.jpg");
+    background-image: url("../../resources/images/chi1.jpg");
+
+}
+
+#page-container {
+    margin-top: 2em;
+}
+
+#input-form {
+    .stand-box;
+    background-color: @box-background;
+    margin: 2em 0em;
+}
+
+.form-group {
+    width: 88%;
+    margin: auto;
+}
+
+#city-field {
+    width: 50%;
+}
+
+#dropdowns {
+    display: flex;
+    padding: 0.5em;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2em auto;
+    justify-content: space-between;
+}
+
+#submit-btn {
+    padding: 0em 0.5em;
+}
+
+#state-section, #country-section {
+    max-width: 60%;
+    padding: 0em;
+}
+
+.drop-btn {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#state-dropdown, #submit-btn {
+    display: block;
+}
+
+#current-cond {
+    .stand-box;
+    background-color: @box-background;
+    border: 1px solid #555;
+    border-radius: 0.2em;
+    margin: 2em 0em;
+}
+
+#conditions-container {
+    width: 90%;
+    margin: auto;
+}
+
+.panel-label {
+    display: block;
+}
+
+#date-row, #temp-row, #cond-row {
+    text-align: right;
+    width: 30%;
+}
+
+#location {
+    border-bottom: 2px solid #777;
+    padding: 0.5em 0em;
+}
+
+#current-conditions {
+    margin-bottom: 0.25em;
+    padding: 0.25em;
+}
+
+.forecast-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @box-background;
+    .stand-box;
+    img {
+        height: 86px;
+        width: 86px;
+    }
+}
+

@@ -6,8 +6,10 @@ Designer: N. S. Clerman,
 -->
 <html lang="en">
   <head>
-    <title>Weather Forecast</title>
     <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Norm's Weather Page</title>
     <!-- Bootstrap links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
@@ -18,8 +20,8 @@ Designer: N. S. Clerman,
 
   </head>
   <body>
-    <div class="container" id="page-container">
-      <div class="row">
+    <div class="container" id="page-container">  <!-- page-container -->
+      <div class="row"> <!-- input-form-row -->
 
         <div class="col-md-offset-1 col-md-9">
           <form onsubmit="return assembleURL()" id="input-form">
@@ -47,28 +49,28 @@ Designer: N. S. Clerman,
             
           </form>
         </div>
-      </div>
+      </div> <!-- input-form-row -->
 
-      <div class="row">
+      <div class="row"> <!-- Current conditions row-->
         <div class="col-md-offset-1 col-md-5">
           <div id="current-cond">
             <div id="conditions-container">
               <!-- <label id="location" class="panel-label">Baltimore, Maryland</label>
-              <label id="current-conditions" class="panel-label">Current Conditions</label>-->
+                   <label id="current-conditions" class="panel-label">Current Conditions</label>-->
               <label class="panel-label" id="location">Baltimore, Maryland</label>
               <label class="panel-label">Current Conditions</label>
               <table class="table">
                 <tbody>
                   <tr>
-                    <td><strong>       Date:</strong></td>
+                    <td id="date-row"><strong>Date:</strong></td>
                     <td id="date"></td>
                   </tr>
                   <tr>
-                    <td><strong>Temperature:</strong></td>
+                    <td id="temp-row"><strong>Temperature:</strong></td>
                     <td id="temp"></td>
                   </tr>
                   <tr>
-                    <td><strong> Conditions:</strong></td>
+                    <td id="cond-row"><strong>Conditions:</strong></td>
                     <td id="conditions"></td>
                   </tr>
                 </tbody>
@@ -76,10 +78,65 @@ Designer: N. S. Clerman,
             </div>
           </div>
         </div>
+      </div> <!-- Current conditions row-->
+
+      <div class="row"> <!-- Forecast row-->
+        <div class="col-md-offset-2 col-md-7">
+          <div id="forecasts">
+            <div class="forecast-box" id="forecast-0">
+              <span class="forecast-day">Today </span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-1">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-2">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-3">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-4">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-5">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+            <div id="forecast-6">
+              <span class="forecast-day"></span>
+              <img class="day-image" src="" />
+              <span class="day-conditions"></span>
+              <span class="day-high">High</span>
+              <span class="day-low"></span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      </div>
-    </div>
+    </div> <!-- page-container -->
 
     <!-- JQuery script-->    
     <script
